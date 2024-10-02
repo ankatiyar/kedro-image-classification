@@ -2,3 +2,9 @@ ipython>=8.10
 jupyterlab>=3.0
 kedro~=0.19.8
 notebook
+numpy
+seaborn
+keras
+scikit-learn
+tensorflow
+opencv-python
