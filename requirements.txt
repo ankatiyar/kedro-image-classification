@@ -1,10 +1,7 @@
 ipython>=8.10
 jupyterlab>=3.0
 kedro~=0.19.8
+kedro-datasets[pillow-imagedataset,tensorflow,plotly]~=4.0.0
 notebook
-numpy
-seaborn
-keras
-scikit-learn
-tensorflow
-opencv-python
+scikit-learn~=1.5.2
+tensorflow~=2.17.0

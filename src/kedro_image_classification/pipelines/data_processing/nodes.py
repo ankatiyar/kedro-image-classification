@@ -9,7 +9,6 @@ from sklearn.model_selection import train_test_split
 
 
 def convert_to_np(part):
-    print(type(part))
     images = []
     labels = []
     for file, func in part.items():
