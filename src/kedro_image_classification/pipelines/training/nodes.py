@@ -65,4 +65,5 @@ def compile_model(model, optimizer='adam', loss='categorical_crossentropy', metr
     return model
 
 def train_model(model, X_train, y_train, X_val, y_val, epochs, batch_size):
-    return model.fit(X_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(X_val, y_val), verbose=1)
+    history = model.fit(X_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(X_val, y_val), verbose=1)
+    return model, history

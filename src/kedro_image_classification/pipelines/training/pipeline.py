@@ -23,6 +23,6 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=train_model,
             inputs=['compiled_model', 'ships_train', 'labels_train', 'ships_val', 'labels_val', 'params:epochs', 'params:batch_size'],
-            outputs='fitted_model'
+            outputs=['fitted_model', 'history']
         )
     ])
