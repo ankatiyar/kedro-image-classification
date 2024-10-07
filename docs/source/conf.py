@@ -205,7 +205,7 @@ def remove_arrows_in_examples(lines):
         lines[i] = line.replace(">>>", "")
 
 
-def autodoc_process_docstring(app, what, name, obj, options, lines):
+def autodoc_process_docstring(app, what, name, obj, options, lines):  #noqa
     remove_arrows_in_examples(lines)
 
 
