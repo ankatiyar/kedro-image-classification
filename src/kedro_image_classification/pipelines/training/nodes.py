@@ -21,25 +21,25 @@ def define_model(input_shape = (80, 80, 3), n_classes = 2):
     model.add(Input(shape=input_shape))
 
     model.add(Conv2D(32, (3, 3), activation='linear', padding='same'))
-    model.add(LeakyReLU(alpha=0.1))
+    model.add(LeakyReLU(negative_slope=0.1))
     model.add(MaxPooling2D((2, 2), padding='same'))
     model.add(Dropout(0.25))
     model.add(BatchNormalization())
 
     model.add(Conv2D(64, (3, 3), activation='linear', padding='same'))
-    model.add(LeakyReLU(alpha=0.1))
+    model.add(LeakyReLU(negative_slope=0.1))
     model.add(MaxPooling2D((2, 2), padding='same'))
     model.add(Dropout(0.25))
     model.add(BatchNormalization())
 
     model.add(Conv2D(128, (3, 3), activation='linear', padding='same'))
-    model.add(LeakyReLU(alpha=0.1))
+    model.add(LeakyReLU(negative_slope=0.1))
     model.add(MaxPooling2D((2, 2), padding='same'))
     model.add(Dropout(0.25))
     model.add(BatchNormalization())
 
     model.add(Conv2D(256, (3, 3), activation='linear', padding='same'))
-    model.add(LeakyReLU(alpha=0.1))
+    model.add(LeakyReLU(negative_slope=0.1))
     model.add(MaxPooling2D((2, 2), padding='same'))
     model.add(Dropout(0.25))
     model.add(BatchNormalization())
@@ -47,12 +47,12 @@ def define_model(input_shape = (80, 80, 3), n_classes = 2):
     model.add(Flatten())
 
     model.add(Dense(256, activation='linear'))
-    model.add(LeakyReLU(alpha=0.1))
+    model.add(LeakyReLU(negative_slope=0.1))
     model.add(Dropout(0.25))
     model.add(BatchNormalization())
 
     model.add(Dense(64, activation='linear'))
-    model.add(LeakyReLU(alpha=0.1))
+    model.add(LeakyReLU(negative_slope=0.1))
     model.add(Dropout(0.25))
     model.add(BatchNormalization())
 

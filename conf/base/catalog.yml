@@ -60,3 +60,15 @@ loss_plot:
 # "{type}_plot":
 #   type: plotly.JSONDataset
 #   filepath: data/08_reporting/{type}_plot.json
+
+# accuracy_plot:
+#   type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+#   dataset:
+#     type: plotly.JSONDataset
+#     filepath: data/08_reporting/accuracy_plot.json
+
+# loss_plot:
+#   type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+#   dataset:
+#     type: plotly.JSONDataset
+#     filepath: data/08_reporting/loss_plot.json
