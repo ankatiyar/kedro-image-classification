@@ -12,7 +12,7 @@ def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
         node(
             func=define_model,
-            inputs=None,
+            inputs=["params:input_shape", "params:num_classes"],
             outputs='model'
         ),
         node(

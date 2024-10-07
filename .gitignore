@@ -27,6 +27,8 @@ logs/**
 ##########################
 # Common files
 
+mlflow_runs/
+
 # IntelliJ
 .idea/
 *.iml

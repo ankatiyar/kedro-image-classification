@@ -8,7 +8,7 @@ from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 
 
-def convert_to_np(part):
+def convert_to_np(part, num_classes=2):
     images = []
     labels = []
     for file, func in part.items():
@@ -17,7 +17,7 @@ def convert_to_np(part):
         labels.append(file[:1])
     images = np.array(images, dtype=np.int64)
     labels = np.array(labels, dtype=np.int64)
-    labels = to_categorical(labels)
+    labels = to_categorical(labels, num_classes=num_classes)
     return images, labels
 
 def split_train_test_val(images, labels, test_split, val_split, random_state):

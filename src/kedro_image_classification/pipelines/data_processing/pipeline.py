@@ -13,7 +13,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         [
             node(
                 func=convert_to_np,
-                inputs="ships",
+                inputs=["ships", "params:num_classes"],
                 outputs=["images", "labels"],
                 name="convert_to_np",
             ),
