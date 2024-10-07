@@ -7,7 +7,7 @@ This Kedro project demonstrates how to use Kedro for image classification tasks.
 1. Clone this project locally
 2. Install dependencies
 ```bash
-pip install uv
-uv pip install -r requirements.txt
+pip install -r requirements.txt
 ```
-3. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/rhammell/ships-in-satellite-imagery) and place it in the `data/01_raw` directory
+3. Download the [dataset from Kaggle](https://www.kaggle.com/datasets/rhammell/ships-in-satellite-imagery) and place it in the `data/01_raw` directory
+
